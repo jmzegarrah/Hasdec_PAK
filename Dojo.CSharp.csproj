@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.4.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -66,14 +68,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DepthColliderDemo\Scripts\DepthImageViewer.cs" />
+    <Compile Include="Assets\DepthColliderDemo\Scripts\EggMover.cs" />
+    <Compile Include="Assets\DepthColliderDemo\Scripts\EggSpawner.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\EventSystemChecker.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\NivelIntermedio.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\Pause.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\PlayMusic.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\QuitApplication.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\SetAudioLevels.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\ShowPanels.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\NivelBasico.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\StartOptions.cs" />
+    <Compile Include="Assets\GesturesDemo\Scripts\GestureListener.cs" />
+    <Compile Include="Assets\GesturesDemo\Scripts\PresentationScript.cs" />
+    <Compile Include="Assets\KinectScripts\AvatarController.cs" />
+    <Compile Include="Assets\KinectScripts\AvatarControllerClassic.cs" />
+    <Compile Include="Assets\KinectScripts\Cubeman\CubemanController.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\BoneOrientationsConstraint.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\BoneOrientationsFilter.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\ClippedLegsFilter.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\JointPositionsFilter.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\KinectHelper.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\SelfIntersectionConstraint.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\TimedLerp.cs" />
+    <Compile Include="Assets\KinectScripts\Filters\TrackingStateFilter.cs" />
+    <Compile Include="Assets\KinectScripts\KinectGestures.cs" />
+    <Compile Include="Assets\KinectScripts\KinectManager.cs" />
+    <Compile Include="Assets\KinectScripts\KinectWrapper.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\FollowUserRotation.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\GetJointPositionDemo.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\LoadMainLevel.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\MouseControl.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\SetSceneAvatars.cs" />
+    <Compile Include="Assets\KinectScripts\Samples\SimpleGestureListener.cs" />
+    <Compile Include="Assets\OverlayDemo\Scripts\KinectOverlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Game Jam Menu Template\Fonts\OpenSans\License!.txt" />
