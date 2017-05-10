@@ -106,9 +106,9 @@ public class NivelBasico : MonoBehaviour {
 			Invoke ("PlayNewMusic", fadeAlphaAnimationClip.length);
 		}
 		//Set trigger for animator to start animation fading out Menu UI
-		animMenuAlpha.SetTrigger ("fade");
-		Invoke("HideDelayed", fadeAlphaAnimationClip.length);
-        SceneManager.LoadScene("Niveles");
+		//animMenuAlpha.SetTrigger ("fade");
+		//Invoke("HideDelayed", fadeAlphaAnimationClip.length);
+        SceneManager.LoadScene("Construccion");
         Debug.Log ("Game started in same scene! Put your game starting stuff here.");
 	}
 
