@@ -1,118 +1,86 @@
-Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+Initialize engine version: 5.6.0f3 (497a0f351392)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 10.1]
-    Renderer: Intel(R) HD Graphics 3000 (ID=0x116)
-    Vendor:   Intel
-    VRAM:     848 MB
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 840M    (ID=0x1341)
+    Vendor:   NVIDIA
+    VRAM:     1992 MB
+    Driver:   10.18.13.5362
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Public\Documents\Unity Projects\Dojo\PAK_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Public\Documents\Unity Projects\Dojo\PAK_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Public\Documents\Unity Projects\Dojo\PAK_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Public\Documents\Unity Projects\Dojo\PAK_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Public\Documents\Unity Projects\Dojo\PAK_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Public\Documents\Unity Projects\Dojo\PAK_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Public\Documents\Unity Projects\Dojo\PAK_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Public\Documents\Unity Projects\Dojo\PAK_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.330 seconds
-Platform assembly: C:\Users\Public\Documents\Unity Projects\Dojo\PAK_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Public\Documents\Unity Projects\Dojo\PAK_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.267 seconds
+Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on Perfil
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
  
-(Filename:  Line: 375)
+(Filename:  Line: 376)
 
 OnLevelWasLoaded was found on Logros
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
  
-(Filename:  Line: 375)
+(Filename:  Line: 376)
 
 OnLevelWasLoaded was found on StartOptions
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
  
-(Filename:  Line: 375)
+(Filename:  Line: 376)
 
 OnLevelWasLoaded was found on EventSystemChecker
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
  
-(Filename:  Line: 375)
+(Filename:  Line: 376)
 
 OnLevelWasLoaded was found on NivelBasico
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
  
-(Filename:  Line: 375)
+(Filename:  Line: 376)
 
 OnLevelWasLoaded was found on Configuraciones
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
  
-(Filename:  Line: 375)
+(Filename:  Line: 376)
 
 OnLevelWasLoaded was found on NivelIntermedio
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
  
-(Filename:  Line: 375)
+(Filename:  Line: 376)
 
 OnLevelWasLoaded was found on Atras
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
  
-(Filename:  Line: 375)
+(Filename:  Line: 376)
 
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.048186 ms
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 463c -> priority: 1 
+UnloadTime: 1.456163 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1978 -> priority: 1 
+  Thread -> id: 2070 -> priority: 1 
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.503789 ms
+UnloadTime: 0.354097 ms
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 478.
-Total: 0.566707 ms (FindLiveObjects: 0.059348 ms CreateObjectMapping: 0.020526 ms MarkObjects: 0.399819 ms  DeleteObjects: 0.085675 ms)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 386)
-
-Game started in same scene! Put your game starting stuff here.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.700085 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 453.
-Total: 0.442210 ms (FindLiveObjects: 0.045068 ms CreateObjectMapping: 0.020080 ms MarkObjects: 0.366798 ms  DeleteObjects: 0.009816 ms)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 558.
+Total: 0.550819 ms (FindLiveObjects: 0.040199 ms CreateObjectMapping: 0.022665 ms MarkObjects: 0.404133 ms  DeleteObjects: 0.083392 ms)
 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
-(Filename:  Line: 386)
-
-Game started in same scene! Put your game starting stuff here.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.812578 ms
-
-Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 202.
-Total: 0.815702 ms (FindLiveObjects: 0.034359 ms CreateObjectMapping: 0.015171 ms MarkObjects: 0.151717 ms  DeleteObjects: 0.612669 ms)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.365905 ms
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 480.
-Total: 0.568938 ms (FindLiveObjects: 0.028558 ms CreateObjectMapping: 0.023650 ms MarkObjects: 0.426592 ms  DeleteObjects: 0.089245 ms)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 386)
+(Filename:  Line: 462)
 
