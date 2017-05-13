@@ -109,7 +109,7 @@ public class Perfil : MonoBehaviour {
 		//animMenuAlpha.SetTrigger ("fade");
 		//Invoke("HideDelayed", fadeAlphaAnimationClip.length);
         SceneManager.LoadScene("Construccion");
-        Debug.Log ("Game started in same scene! Put your game starting stuff here.");
+        Debug.Log ("Te encuentras en perfil.");
 	}
 
 

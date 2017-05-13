@@ -109,7 +109,7 @@ public class StartOptions : MonoBehaviour {
 		animMenuAlpha.SetTrigger ("fade");
 		Invoke("HideDelayed", fadeAlphaAnimationClip.length);
         SceneManager.LoadScene("Niveles");
-        Debug.Log ("Game started in same scene! Put your game starting stuff here.");
+        Debug.Log ("Estas en entrenamiento.");
 	}
 
 

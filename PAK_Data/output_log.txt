@@ -15,7 +15,7 @@ Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\Unity
 Loading C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.337 seconds
+- Completed reload, in  0.280 seconds
 Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on Perfil
@@ -70,15 +70,35 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.860724 ms
+UnloadTime: 1.858158 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 460 -> priority: 1 
-  Thread -> id: 200 -> priority: 1 
+  Thread -> id: 2608 -> priority: 1 
+  Thread -> id: 2b9c -> priority: 1 
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.393014 ms
+UnloadTime: 0.504632 ms
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 558.
-Total: 0.690662 ms (FindLiveObjects: 0.041054 ms CreateObjectMapping: 0.032501 ms MarkObjects: 0.491375 ms  DeleteObjects: 0.125302 ms)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 571.
+Total: 0.790305 ms (FindLiveObjects: 0.063292 ms CreateObjectMapping: 0.061154 ms MarkObjects: 0.524732 ms  DeleteObjects: 0.139415 ms)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 462)
+
+Se encuentra en Configuracion
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.863995 ms
+
+Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 284.
+Total: 15.117586 ms (FindLiveObjects: 0.048324 ms CreateObjectMapping: 0.041910 ms MarkObjects: 0.203563 ms  DeleteObjects: 14.822506 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.400712 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 573.
+Total: 0.758231 ms (FindLiveObjects: 0.072273 ms CreateObjectMapping: 0.074839 ms MarkObjects: 0.489236 ms  DeleteObjects: 0.121026 ms)
 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  

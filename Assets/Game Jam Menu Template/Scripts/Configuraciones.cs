@@ -109,7 +109,7 @@ public class Configuraciones : MonoBehaviour {
 		//animMenuAlpha.SetTrigger ("fade");
 		//Invoke("HideDelayed", fadeAlphaAnimationClip.length);
         SceneManager.LoadScene("Construccion");
-        Debug.Log ("Game started in same scene! Put your game starting stuff here.");
+        Debug.Log ("Se encuentra en Configuracion");
 	}
 
 
