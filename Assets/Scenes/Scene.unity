@@ -254,7 +254,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4653748}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1188685832}
+        m_MethodName: StartGameInScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &4653748
@@ -3197,6 +3208,7 @@ GameObject:
   - component: {fileID: 1188685831}
   - component: {fileID: 1188685830}
   - component: {fileID: 1188685829}
+  - component: {fileID: 1188685832}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -3497,6 +3509,25 @@ MonoBehaviour:
   animMenuAlpha: {fileID: 0}
   fadeColorAnimationClip: {fileID: 7400000, guid: ca6f1c3d28a5b4d7fac820172514263f,
     type: 2}
+  fadeAlphaAnimationClip: {fileID: 0}
+--- !u!114 &1188685832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1188685817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b9c5c4eea10b345a07d725851d9b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToStart: 1
+  changeScenes: 0
+  changeMusicOnStart: 0
+  inMainMenu: 1
+  animColorFade: {fileID: 0}
+  animMenuAlpha: {fileID: 0}
+  fadeColorAnimationClip: {fileID: 0}
   fadeAlphaAnimationClip: {fileID: 0}
 --- !u!1 &1197875573
 GameObject:

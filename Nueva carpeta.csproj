@@ -85,6 +85,7 @@
     <Compile Include="Assets\DepthColliderDemo\Scripts\EggMover.cs" />
     <Compile Include="Assets\DepthColliderDemo\Scripts\EggSpawner.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\Atras.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\Ayuda.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\Configuraciones.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\EventSystemChecker.cs" />
