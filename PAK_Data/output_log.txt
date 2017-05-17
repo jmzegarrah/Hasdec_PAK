@@ -7,17 +7,19 @@ Direct3D:
     VRAM:     1992 MB
     Driver:   10.18.13.5362
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.280 seconds
-Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Gonxalo\Desktop\Nueva carpeta\PAK_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.205 seconds
+Platform assembly: C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on Perfil
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
@@ -66,41 +68,40 @@ Add a delegate to SceneManager.sceneLoaded instead to get notifications after sc
  
 (Filename:  Line: 376)
 
+OnLevelWasLoaded was found on Ayuda
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 376)
+
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.858158 ms
+UnloadTime: 1.658871 ms
+Platform assembly: C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\Gonxalo\Desktop\Proyecto PAK\PAK_Data\Managed\Boo.Lang.dll (this message is harmless)
+MissingMethodException: UnityEngine.Texture2D.Play
+  at Boo.Lang.Runtime.DynamicDispatching.MethodDispatcherFactory.ProduceExtensionDispatcher () [0x00000] in <filename unknown>:0 
+  at Boo.Lang.Runtime.DynamicDispatching.MethodDispatcherFactory.Create () [0x00000] in <filename unknown>:0 
+  at Boo.Lang.Runtime.RuntimeServices.DoCreateMethodDispatcher (System.Object target, System.Type targetType, System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Boo.Lang.Runtime.RuntimeServices.CreateMethodDispatcher (System.Object target, System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at Boo.Lang.Runtime.RuntimeServices+<Invoke>c__AnonStorey15.<>m__9 () [0x00000] in <filename unknown>:0 
+  at Boo.Lang.Runtime.DynamicDispatching.DispatcherCache.Get (Boo.Lang.Runtime.DynamicDispatching.DispatcherKey key, Boo.Lang.Runtime.DynamicDispatching.DispatcherFactory factory) [0x00000] in <filename unknown>:0 
+  at Boo.Lang.Runtime.RuntimeServices.GetDispatcher (System.Object target, System.String cacheKeyName, System.Type[] cacheKeyTypes, Boo.Lang.Runtime.DynamicDispatching.DispatcherFactory factory) [0x00000] in <filename unknown>:0 
+  at Boo.Lang.Runtime.RuntimeServices.GetDispatcher (System.Object target, System.Object[] args, System.String cacheKeyName, Boo.Lang.Runtime.DynamicDispatching.DispatcherFactory factory) [0x00000] in <filename unknown>:0 
+  at Boo.Lang.Runtime.RuntimeServices.Invoke (System.Object target, System.String name, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at UnityScript.Lang.UnityRuntimeServices.Invoke (System.Object target, System.String name, System.Object[] args, System.Type scriptBaseType) [0x00000] in <filename unknown>:0 
+  at videoplay.Main () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2608 -> priority: 1 
-  Thread -> id: 2b9c -> priority: 1 
-Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.504632 ms
+  Thread -> id: 1fb4 -> priority: 1 
+  Thread -> id: 179c -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 394.789276 ms
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 571.
-Total: 0.790305 ms (FindLiveObjects: 0.063292 ms CreateObjectMapping: 0.061154 ms MarkObjects: 0.524732 ms  DeleteObjects: 0.139415 ms)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 462)
-
-Se encuentra en Configuracion
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 8.863995 ms
-
-Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 284.
-Total: 15.117586 ms (FindLiveObjects: 0.048324 ms CreateObjectMapping: 0.041910 ms MarkObjects: 0.203563 ms  DeleteObjects: 14.822506 ms)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.400712 ms
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 573.
-Total: 0.758231 ms (FindLiveObjects: 0.072273 ms CreateObjectMapping: 0.074839 ms MarkObjects: 0.489236 ms  DeleteObjects: 0.121026 ms)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 462)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 306.
+Total: 0.246756 ms (FindLiveObjects: 0.025659 ms CreateObjectMapping: 0.020955 ms MarkObjects: 0.180470 ms  DeleteObjects: 0.019244 ms)
 
