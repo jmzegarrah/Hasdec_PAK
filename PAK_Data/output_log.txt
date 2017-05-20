@@ -17,7 +17,7 @@ Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityEngine.UI.
 Loading C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.243 seconds
+- Completed reload, in  0.262 seconds
 Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on iraMenuPrincipal
@@ -84,7 +84,7 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.289806 ms
+UnloadTime: 58.852108 ms
 Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityScript.Lang.dll (this message is harmless)
 Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\Boo.Lang.dll (this message is harmless)
 MissingMethodException: UnityEngine.Texture2D.Play
@@ -103,11 +103,34 @@ MissingMethodException: UnityEngine.Texture2D.Play
 (Filename:  Line: -1)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1ee4 -> priority: 1 
-  Thread -> id: 29e8 -> priority: 1 
+  Thread -> id: 2898 -> priority: 1 
+  Thread -> id: 18a8 -> priority: 1 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 382.897919 ms
+UnloadTime: 375.384033 ms
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 908.
-Total: 0.869849 ms (FindLiveObjects: 0.073556 ms CreateObjectMapping: 0.060299 ms MarkObjects: 0.715893 ms  DeleteObjects: 0.018816 ms)
+Total: 20.706606 ms (FindLiveObjects: 0.065003 ms CreateObjectMapping: 0.051746 ms MarkObjects: 20.564623 ms  DeleteObjects: 0.024803 ms)
+
+Te encuentras en logros
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 16.519867 ms
+
+Unloading 224 unused Assets to reduce memory usage. Loaded Objects now: 581.
+Total: 0.588880 ms (FindLiveObjects: 0.062865 ms CreateObjectMapping: 0.043620 ms MarkObjects: 0.371204 ms  DeleteObjects: 0.109907 ms)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 462)
+
+Scene 'VerPerfil' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 137)
+
+Te encuentras en perfil.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

@@ -23,3 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Log-Reg.unity
     guid: 73960557001aa114c99eef6b017e14cc
+  - enabled: 1
+    path: Assets/Scenes/VerPerfil.unity
+    guid: e09591c23f5384242b873436152b1c2c

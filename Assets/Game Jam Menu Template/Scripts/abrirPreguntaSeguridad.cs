@@ -19,6 +19,12 @@ public class abrirPreguntaSeguridad : MonoBehaviour {
                   PreguntadeSeguridad.SetActive(false);
       
     }
+
+    public void guardar()
+    {
+        PreguntadeSeguridad.SetActive(false);
+
+    }
     public void validar()
     {
         Debug.Log("cerro pregunta apra abrir contrasena");

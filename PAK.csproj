@@ -100,8 +100,10 @@
     <Compile Include="Assets\Game Jam Menu Template\Scripts\SetAudioLevels.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\ShowPanels.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\StartOptions.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\abrirConfirmacion.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\abrirContrasena.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\abrirPreguntaSeguridad.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\eliminarCuentaCuadro.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\iraMenuPrincipal.cs" />
     <Compile Include="Assets\GesturesDemo\Scripts\GestureListener.cs" />
     <Compile Include="Assets\GesturesDemo\Scripts\PresentationScript.cs" />
