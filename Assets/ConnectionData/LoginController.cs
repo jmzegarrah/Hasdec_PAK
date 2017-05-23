@@ -10,7 +10,7 @@ public class LoginController : MonoBehaviour
     public InputField UsuCon;
     public GameObject logerror;
     public GameObject logsuccess;
-
+    public static string usuario = "";
 
     void Start()
     {
@@ -28,6 +28,7 @@ public class LoginController : MonoBehaviour
                            + "UsuSobNom=" + UsuSobNom.text + "&" +
                            "UsuCon=" + UsuCon.text;
 
+            usuario = UsuSobNom.text;
                 StartCoroutine(LoginUser(url));
 
         }
