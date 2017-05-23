@@ -16,6 +16,7 @@ public class LoginController : MonoBehaviour
     {
       
         logerror.SetActive(false);
+        logsuccess.SetActive(false);
     }
 
     public void ValidarUsuario()
@@ -44,16 +45,17 @@ public class LoginController : MonoBehaviour
         Debug.Log(url);
         WWW conecction = new WWW(url);
         yield return (conecction);
-        if (conecction.text==("0"))
+        if (conecction.text.Contains("0"))
         {
-            logsuccess.SetActive(true);
+            logsuccess.SetActive(false);
             logerror.SetActive(true);
         }
         else
         {
+            logsuccess.SetActive(true);
             SceneManager.LoadScene("Scene");
-            Debug.Log("Te encuentras en logros");
-            logerror.SetActive(false);
+            Debug.Log("Te encuentras en menu principal");
+           
         }
     }
 }

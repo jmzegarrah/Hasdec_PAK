@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ConnectionData\LoginController.cs" />
+    <Compile Include="Assets\ConnectionData\QuestionController.cs" />
     <Compile Include="Assets\ConnectionData\UserController.cs" />
     <Compile Include="Assets\DepthColliderDemo\Scripts\DepthImageViewer.cs" />
     <Compile Include="Assets\DepthColliderDemo\Scripts\EggMover.cs" />
@@ -130,6 +131,10 @@
     <Compile Include="Assets\KinectScripts\Samples\SetSceneAvatars.cs" />
     <Compile Include="Assets\KinectScripts\Samples\SimpleGestureListener.cs" />
     <Compile Include="Assets\OverlayDemo\Scripts\KinectOverlayer.cs" />
+    <Compile Include="Assets\Script\Agregar_Puntos.cs" />
+    <Compile Include="Assets\Script\Conexion.cs" />
+    <Compile Include="Assets\Script\Ver_puntos.cs" />
+    <Compile Include="Assets\Script\visualizar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Game Jam Menu Template\Fonts\OpenSans\License!.txt" />
