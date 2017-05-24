@@ -56,7 +56,7 @@ public class QuestionController : MonoBehaviour {
 
     public void cambiarContrasena()
     {
-        if (UsuCon.text.Length > 0 && UsuCon.text.Length < 10)
+        if (UsuCon.text.Length >= 8 && UsuCon.text.Length < 20)
         {
             if (UsuCon.text.Equals(UsuConfirmacion.text))
             {

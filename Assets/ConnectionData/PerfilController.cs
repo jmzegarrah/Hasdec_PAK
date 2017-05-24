@@ -32,7 +32,7 @@ public class PerfilController : MonoBehaviour
 
     void Start()
     {
-        string url = "http://localhost/PAK_VerPerfil/PAK_DatosUsuario.php?" + "UsuSobNom=" +"gonzqh";
+        string url = "http://localhost/PAK_VerPerfil/PAK_DatosUsuario.php?" + "UsuSobNom=" +LoginController.usuario;
    
         StartCoroutine(loadData(url));
       
@@ -41,7 +41,7 @@ public class PerfilController : MonoBehaviour
 
     public void cambiarPregunta() {
         
-        string url = "http://localhost/PAK_VerPerfil/PAK_CambiarPregunta.php?" + "UsuSobNom=" + "gonzqh"+"&UsuResPreSec="+ UsuResPreSec.text
+        string url = "http://localhost/PAK_VerPerfil/PAK_CambiarPregunta.php?" + "UsuSobNom=" + LoginController.usuario + "&UsuResPreSec="+ UsuResPreSec.text
             +"&UsuPreSec="+ (UsuPreSec.value+1);
         StartCoroutine(changeQuestion(url));
     }
@@ -56,7 +56,7 @@ public class PerfilController : MonoBehaviour
     }
 
     public void eliminarCuenta() {
-        string url = "http://localhost/PAK_VerPerfil/PAK_EliminarUsuario.php?" + "UsuSobNom=" + "gonzqh";
+        string url = "http://localhost/PAK_VerPerfil/PAK_EliminarUsuario.php?" + "UsuSobNom=" + LoginController.usuario;
         StartCoroutine(deleteUser(url));
     }
     IEnumerator deleteUser(string url)

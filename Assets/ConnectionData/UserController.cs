@@ -29,19 +29,19 @@ public class UserController : MonoBehaviour
     public void RegistrarUsuario()
     {
 
-        if (UsuSobNom.text.Length > 0 && UsuSobNom.text.Length < 10 && UsuCon.text.Length > 0 && UsuCon.text.Length < 10
-           && UsuConConfirmacion.text.Length > 0 && UsuConConfirmacion.text.Length < 10)
+        if (UsuSobNom.text.Length >0 && UsuSobNom.text.Length < 20 && UsuCon.text.Length >= 8 && UsuCon.text.Length < 20
+           && UsuConConfirmacion.text.Length >= 8 && UsuConConfirmacion.text.Length < 20)
         {
             if (UsuCon.text.Equals(UsuConConfirmacion.text))
             {
-
+                string pregunta = (UsuPreSec.value + 1).ToString();
                 string url = "http://localhost/PAK_AgregarUsuario.php?"
                            + "UsuNomApe=" +usuNomApe.text + "&" +
                            "UsuIma=" + UsuIma + "&" +
                            "UsuSex=" + UsuSex.value.ToString() + "&" +
                            "UsuSobNom=" + UsuSobNom.text + "&" +
                            "UsuCon=" + UsuCon.text + "&" +
-                           "UsuPreSec=" + UsuPreSec.value.ToString() + "&" +
+                           "UsuPreSec=" + pregunta + "&" +
                            "UsuResPreSec=" + UsuResPreSec.text + "&" +
                            "UsuEstPriSes=" + UsuEstPriSes + "&" +
                            "UsuEst=" + UsuEst + "&" +
