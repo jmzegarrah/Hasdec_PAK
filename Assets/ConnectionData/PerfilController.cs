@@ -28,14 +28,73 @@ public class PerfilController : MonoBehaviour
     public GameObject ventanaPregunta;
     public InputField UsuResPreSec;
     public Dropdown UsuPreSec;
-
+    public InputField UsuCon;
+    public InputField UsuConConf;
+    public GameObject valerror;
+    public GameObject confirmar;
+    public GameObject VentanaCambiarPass;
+    public GameObject confirmarGuardarCambios;
 
     void Start()
     {
-        string url = "http://localhost/PAK_VerPerfil/PAK_DatosUsuario.php?" + "UsuSobNom=" +LoginController.usuario;
-   
+        //string url = "http://localhost/PAK_VerPerfil/PAK_DatosUsuario.php?" + "UsuSobNom=" +LoginController.usuario;
+        string url = "http://localhost/PAK_VerPerfil/PAK_DatosUsuario.php?" + "UsuSobNom=" + LoginController.usuario;
+
         StartCoroutine(loadData(url));
-      
+        
+
+
+    }
+
+
+    public void cambiarContrasena()
+    {
+        
+        if (UsuCon.text.Length >= 8 && UsuCon.text.Length <= 20 && UsuConConf.text.Length >= 8 && UsuConConf.text.Length <= 20)
+        {
+            if (UsuCon.text.Equals(UsuConConf.text))
+            {
+                confirmar.SetActive(true);
+            }
+            else
+            {
+                valerror.SetActive(true);
+            }
+
+        }
+        else
+        {
+            valerror.SetActive(true);
+
+        }
+    }
+    public void confirmarCambioContrasena() {
+        string url = "http://localhost/PAK_PreguntaSeguridad/PAK_CambiarContrasena.php?"
+                      + "UsuCon=" + UsuCon.text + "&UsuSobNom=" + LoginController.usuario;
+        Debug.Log(url);
+        StartCoroutine(ChangePassword(url));
+    }
+
+    IEnumerator ChangePassword(string url)
+    {
+        Debug.Log(url);
+        WWW conecction = new WWW(url);
+        yield return (conecction);
+        if (conecction.text.Contains("Query"))
+        {
+
+
+        }
+        else
+        {
+            confirmar.SetActive(false);
+            VentanaCambiarPass.SetActive(false);
+
+            Debug.Log(conecction.text);
+        }
+    }
+    public void CancelarConfirmacionPass() {
+        confirmar.SetActive(false);
     }
 
 
@@ -71,6 +130,8 @@ public class PerfilController : MonoBehaviour
 
         IEnumerator loadData(string url)
     {
+
+
         Debug.Log(url);
         WWW conecction = new WWW(url);
         yield return (conecction);

@@ -19,6 +19,7 @@ public class LoginController : MonoBehaviour
         logsuccess.SetActive(false);
     }
 
+
     public void ValidarUsuario()
     {
 

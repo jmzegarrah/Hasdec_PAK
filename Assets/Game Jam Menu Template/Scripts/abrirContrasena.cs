@@ -5,12 +5,14 @@ using UnityEngine;
 public class abrirContrasena : MonoBehaviour
 {
     public GameObject Contrasena;
+    public GameObject valerror;
     // Use this for initialization
 
     public void abrirContrasenaWindow()
     {
         Debug.Log("abrio ventana de contrasena");
         Contrasena.SetActive(true);
+        valerror.SetActive(false);
     }
 
     public void cancelar()
@@ -18,6 +20,7 @@ public class abrirContrasena : MonoBehaviour
         Contrasena.SetActive(false);
 
     }
+
     public void Guardar()
     {
         Contrasena.SetActive(false);

@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class abrirConfirmacion : MonoBehaviour
 {
-
-
     public GameObject CuadroConfirmacion;
+
     // Use this for initialization
 
 
@@ -31,11 +30,7 @@ public class abrirConfirmacion : MonoBehaviour
         CuadroConfirmacion.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    
 }
 
 

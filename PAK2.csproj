@@ -84,7 +84,10 @@
     <Compile Include="Assets\ConnectionData\LoginController.cs" />
     <Compile Include="Assets\ConnectionData\PerfilController.cs" />
     <Compile Include="Assets\ConnectionData\QuestionController.cs" />
+    <Compile Include="Assets\ConnectionData\SesionController.cs" />
+    <Compile Include="Assets\ConnectionData\TutorialController.cs" />
     <Compile Include="Assets\ConnectionData\UserController.cs" />
+    <Compile Include="Assets\ConnectionData\updateController.cs" />
     <Compile Include="Assets\DepthColliderDemo\Scripts\DepthImageViewer.cs" />
     <Compile Include="Assets\DepthColliderDemo\Scripts\EggMover.cs" />
     <Compile Include="Assets\DepthColliderDemo\Scripts\EggSpawner.cs" />
@@ -106,6 +109,7 @@
     <Compile Include="Assets\Game Jam Menu Template\Scripts\StartOptions.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\abrirConfirmacion.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\abrirContrasena.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\abrirGuardarCambios.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\abrirPreguntaSeguridad.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\changeImagen.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\eliminarCuentaCuadro.cs" />
