@@ -16,6 +16,7 @@ public class UserController : MonoBehaviour
     public GameObject success;
     string UsuIma = "1";
     string UsuEstPriSes = "1";
+    string UsuMus = "1";
     string UsuEst = "1";
     string HisCod = "1";
     string PerCod = "1";
@@ -44,6 +45,7 @@ public class UserController : MonoBehaviour
                            "UsuPreSec=" + pregunta + "&" +
                            "UsuResPreSec=" + UsuResPreSec.text + "&" +
                            "UsuEstPriSes=" + UsuEstPriSes + "&" +
+                           "UsuMus=" + UsuMus + "&" +
                            "UsuEst=" + UsuEst + "&" +
                            "HisCod=" + HisCod + "&" +
                            "PerCod=" + PerCod;

@@ -8,51 +8,56 @@ public class CambiarMusica : MonoBehaviour {
 
     public Dropdown listaMusica;
     public AudioSource musicaReprodu;
-    public AudioMixerSnapshot volumenAbajo;
-    public AudioMixerSnapshot volemenArriba;
-    private float resetTime = .01f;
+    //public AudioMixerSnapshot volumenAbajo;
+   // public AudioMixerSnapshot volemenArriba;
+   // private float resetTime = .01f;
     public AudioClip Default;
     public AudioClip cancion1;
     public AudioClip cancion2;
     public AudioClip cancion3;
     public AudioClip cancion4;
 
-    private void Awake()
+    void Start()
     {
-        musicaReprodu = GetComponent<AudioSource>();
+        musicaReprodu.Stop(); // just incase PlayOnAwake is ticked
     }
 
-    public void PlayLevelMusic() {
+ 
+    void Update() {
+        musicaReprodu = GetComponent<AudioSource>();
         switch (listaMusica.value) {
             case 0:
-                musicaReprodu.clip = Default;
-
+                //musicaReprodu.Stop();
+                musicaReprodu.clip = cancion1;
+ 
                 break;
 
             case 1:
-                musicaReprodu.clip = cancion1;
+                //musicaReprodu.Stop();
+                musicaReprodu.clip = cancion2;
+                //musicaReprodu.Play(); ;
                 break;
             case 2:
-                musicaReprodu.clip = cancion2;
+                //musicaReprodu.Stop();
+                musicaReprodu.clip = cancion3;
+               // musicaReprodu.Play();
                 break;
             case 3:
-                musicaReprodu.clip = cancion3;
-                break;
-            case 4:
+               // musicaReprodu.Stop();
                 musicaReprodu.clip = cancion4;
+                //musicaReprodu.Play();
                 break;
+
             default:
+               // musicaReprodu.Stop();
                 musicaReprodu.clip = Default;
+                
                 break;
         }
-        FadeUp(resetTime);
+        //FadeUp(resetTime);
+
         musicaReprodu.Play();
+
     }
 
-    public void FadeUp(float fadeTime) {
-        volumenAbajo.TransitionTo(fadeTime);
-    }
-    public void FadeDown(float fadeTime) {
-        volumenAbajo.TransitionTo(fadeTime);
-    }
 }
