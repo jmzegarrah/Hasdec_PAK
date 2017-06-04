@@ -56,7 +56,7 @@ public class CambiarMusica : MonoBehaviour {
         }
         //FadeUp(resetTime);
 
-        musicaReprodu.Play();
+        //musicaReprodu.Play();  //Es necesario quitar comentarios en esa linea para que reproduzca
 
     }
 
