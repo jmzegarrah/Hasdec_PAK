@@ -21,7 +21,7 @@ public class QuestionController : MonoBehaviour {
     }
 
     public void validarUsuario() {
-        if (UsuSobNom.text.Length > 0 && UsuSobNom.text.Length < 10)
+        if (UsuSobNom.text.Length > 0)
         {
             string url = "http://localhost/PAK_PreguntaSeguridad/PAK_ValidarUsuario.php?"
                       + "UsuSobNom=" + UsuSobNom.text;

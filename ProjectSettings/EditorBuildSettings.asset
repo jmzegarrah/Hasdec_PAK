@@ -35,3 +35,42 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pantalla Carga.unity
     guid: 47b9a6851f66e0c47b2c97252e2bb5ee
+  - enabled: 1
+    path: Assets/Scenes/Configuraciones.unity
+    guid: 085768cb5a52cc84b9a57e5fbe758a03
+  - enabled: 1
+    path: Assets/Scenes/PosNaturales.unity
+    guid: 017f1982780df6148b9dbec83863e7e7
+  - enabled: 1
+    path: Assets/Scenes/Cuerpo.unity
+    guid: 73c37b4f029c588428ce5a8103be7405
+  - enabled: 1
+    path: Assets/Scenes/Ataque.unity
+    guid: 5f77516f8e0885b459a8bfe317b9448c
+  - enabled: 1
+    path: Assets/Scenes/Defensa.unity
+    guid: ee76be520a2201e4c837167f0ce35f5e
+  - enabled: 1
+    path: Assets/Scenes/Joe.unity
+    guid: 3da26725d98bee84f8e4be06f9d51f4b
+  - enabled: 1
+    path: Assets/Scenes/Kamae.unity
+    guid: 356009a0ec52e2a44819a76db0f424a0
+  - enabled: 1
+    path: Assets/Scenes/Kokutsu.unity
+    guid: 9f12ee19cabffd34382637bd1a610e78
+  - enabled: 1
+    path: Assets/Scenes/Zenkutsu.unity
+    guid: e38d59a95012f9a44a9bdc7760131ca6
+  - enabled: 1
+    path: Assets/Scenes/Tsuki.unity
+    guid: 7e30d6944ff1dd145af447748f955cae
+  - enabled: 1
+    path: Assets/Oi Zuki.unity
+    guid: b3e91419cc38ead4a979b611c920e1d7
+  - enabled: 1
+    path: Assets/Scenes/Uke.unity
+    guid: 6247dde6297554040b2e183d45bc9abf
+  - enabled: 1
+    path: Assets/Scenes/Age.unity
+    guid: 5370b1496e435774886915ecce8ccdaa

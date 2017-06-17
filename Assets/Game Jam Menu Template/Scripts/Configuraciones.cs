@@ -108,7 +108,7 @@ public class Configuraciones : MonoBehaviour {
 		//Set trigger for animator to start animation fading out Menu UI
 		//animMenuAlpha.SetTrigger ("fade");
 		//Invoke("HideDelayed", fadeAlphaAnimationClip.length);
-        SceneManager.LoadScene("Construccion");
+        SceneManager.LoadScene("Configuraciones");
         Debug.Log ("Se encuentra en Configuracion");
 	}
 

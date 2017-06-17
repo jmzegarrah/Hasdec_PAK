@@ -140,7 +140,7 @@ public class PerfilController : MonoBehaviour
             
             UsuNomApe.text = data[0];
             UsuSobNom.text = data[1];
-        if (data[2].Equals("1"))
+        if (data[2].Equals("0"))
         {
             UsuSex.text = "Masculino";
         }
