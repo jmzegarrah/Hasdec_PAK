@@ -34,26 +34,6 @@ public class KinectGestures
 	public enum Gestures
 	{
 		None = 0,
-		RaiseRightHand,
-		RaiseLeftHand,
-		Psi,
-		Tpose,
-		Stop,
-		Wave,
-		Click,
-		SwipeLeft,
-		SwipeRight,
-		SwipeUp,
-		SwipeDown,
-		RightHandCursor,
-		LeftHandCursor,
-		ZoomOut,
-		ZoomIn,
-		Wheel,
-		Jump,
-		Squat,
-		Push,
-		Pull,
 		GolpeDerecha,
 		GolpeIzquierda,
 		Musibidachi,
@@ -331,7 +311,7 @@ public class KinectGestures
 					}
 					break;
 
-					case Gestures.Saludo:
+					case Gestures.Musibidachi:
 					  switch(gestureData.state)
 					  {
 					    case 0:  // gesture detection - phase 1
