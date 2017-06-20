@@ -6,48 +6,48 @@ public class GestureListener : MonoBehaviour, KinectGestures.GestureListenerInte
 {
 	// GUI Text to display the gesture messages.
 	public GUIText GestureInfo;
-	
-	private bool swipeLeft;
-	private bool swipeRight;
 
-	
-	public bool IsSwipeLeft()
+	private bool GolpeIzquierda;
+	private bool GolpeDerecha;
+
+
+	public bool IsGolpeIzquierda()
 	{
-		if(swipeLeft)
+		if(GolpeIzquierda)
 		{
-			swipeLeft = false;
+			GolpeIzquierda = false;
 			return true;
 		}
-		
-		return false;
-	}
-	
-	public bool IsSwipeRight()
-	{
-		if(swipeRight)
-		{
-			swipeRight = false;
-			return true;
-		}
-		
+
 		return false;
 	}
 
-	
+	public bool IsGolpeDerecha()
+	{
+		if(GolpeDerecha)
+		{
+			GolpeDerecha = false;
+			return true;
+		}
+
+		return false;
+	}
+
+
 	public void UserDetected(uint userId, int userIndex)
 	{
 		// detect these user specific gestures
 		KinectManager manager = KinectManager.Instance;
-		
-		manager.DetectGesture(userId, KinectGestures.Gestures.SwipeLeft);
-		manager.DetectGesture(userId, KinectGestures.Gestures.SwipeRight);
+
+		manager.DetectGesture(userId, KinectGestures.Gestures.GolpeIzquierda);
+		manager.DetectGesture(userId, KinectGestures.Gestures.GolpeDerecha);
 
 		if(GestureInfo != null)
 		{
 			GestureInfo.GetComponent<GUIText>().text = "Swipe left or right to change the slides.";
 		}
 	}
-	
+
 	public void UserLost(uint userId, int userIndex)
 	{
 		if(GestureInfo != null)
@@ -56,13 +56,13 @@ public class GestureListener : MonoBehaviour, KinectGestures.GestureListenerInte
 		}
 	}
 
-	public void GestureInProgress(uint userId, int userIndex, KinectGestures.Gestures gesture, 
+	public void GestureInProgress(uint userId, int userIndex, KinectGestures.Gestures gesture,
 	                              float progress, KinectWrapper.NuiSkeletonPositionIndex joint, Vector3 screenPos)
 	{
 		// don't do anything here
 	}
 
-	public bool GestureCompleted (uint userId, int userIndex, KinectGestures.Gestures gesture, 
+	public bool GestureCompleted (uint userId, int userIndex, KinectGestures.Gestures gesture,
 	                              KinectWrapper.NuiSkeletonPositionIndex joint, Vector3 screenPos)
 	{
 		string sGestureText = gesture + " detected";
@@ -70,20 +70,20 @@ public class GestureListener : MonoBehaviour, KinectGestures.GestureListenerInte
 		{
 			GestureInfo.GetComponent<GUIText>().text = sGestureText;
 		}
-		
-		if(gesture == KinectGestures.Gestures.SwipeLeft)
-			swipeLeft = true;
-		else if(gesture == KinectGestures.Gestures.SwipeRight)
-			swipeRight = true;
+
+		if(gesture == KinectGestures.Gestures.GolpeIzquierda)
+			GolpeIzquierda = true;
+		else if(gesture == KinectGestures.Gestures.GolpeDerecha)
+			GolpeDerecha = true;
 
 		return true;
 	}
 
-	public bool GestureCancelled (uint userId, int userIndex, KinectGestures.Gestures gesture, 
+	public bool GestureCancelled (uint userId, int userIndex, KinectGestures.Gestures gesture,
 	                              KinectWrapper.NuiSkeletonPositionIndex joint)
 	{
 		// don't do anything here, just reset the gesture state
 		return true;
 	}
-	
+
 }

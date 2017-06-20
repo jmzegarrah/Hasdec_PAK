@@ -481,21 +481,21 @@ public class KinectManager : MonoBehaviour
 		gestureData.checkForGestures = new List<KinectGestures.Gestures>();
 		switch(gesture)
 		{
-			case KinectGestures.Gestures.ZoomIn:
-				gestureData.checkForGestures.Add(KinectGestures.Gestures.ZoomOut);
-				gestureData.checkForGestures.Add(KinectGestures.Gestures.Wheel);			
-				break;
+			///case KinectGestures.Gestures.ZoomIn:
+			//	gestureData.checkForGestures.Add(KinectGestures.Gestures.ZoomOut);
+				//gestureData.checkForGestures.Add(KinectGestures.Gestures.Wheel);			
+				//break;
 
-			case KinectGestures.Gestures.ZoomOut:
-				gestureData.checkForGestures.Add(KinectGestures.Gestures.ZoomIn);
-				gestureData.checkForGestures.Add(KinectGestures.Gestures.Wheel);			
+			//case KinectGestures.Gestures.ZoomOut:
+				//gestureData.checkForGestures.Add(KinectGestures.Gestures.ZoomIn);
+		/*		gestureData.checkForGestures.Add(KinectGestures.Gestures.Wheel);			
 				break;
 
 			case KinectGestures.Gestures.Wheel:
 				gestureData.checkForGestures.Add(KinectGestures.Gestures.ZoomIn);
 				gestureData.checkForGestures.Add(KinectGestures.Gestures.ZoomOut);			
 				break;
-			
+			*/
 //			case KinectGestures.Gestures.Jump:
 //				gestureData.checkForGestures.Add(KinectGestures.Gestures.Squat);
 //				break;
@@ -1146,7 +1146,7 @@ public class KinectManager : MonoBehaviour
 				{
 					if(gestureData.complete)
 					{
-						if(gestureData.gesture == KinectGestures.Gestures.Click)
+						if(gestureData.gesture == KinectGestures.Gestures.Joe)
 						{
 							if(ControlMouseCursor)
 							{
@@ -1176,11 +1176,11 @@ public class KinectManager : MonoBehaviour
 					}
 					else if(gestureData.progress >= 0.1f)
 					{
-						if((gestureData.gesture == KinectGestures.Gestures.RightHandCursor || 
-							gestureData.gesture == KinectGestures.Gestures.LeftHandCursor) && 
+						if((gestureData.gesture == KinectGestures.Gestures.GolpeIzquierda || 
+							gestureData.gesture == KinectGestures.Gestures.GolpeDerecha) && 
 							gestureData.progress >= 0.5f)
 						{
-							if(GetGestureProgress(gestureData.userId, KinectGestures.Gestures.Click) < 0.3f)
+							if(GetGestureProgress(gestureData.userId, KinectGestures.Gestures.Joe) < 0.3f)
 							{
 								if(HandCursor1 != null)
 								{
@@ -1231,7 +1231,7 @@ public class KinectManager : MonoBehaviour
 				{
 					if(gestureData.complete)
 					{
-						if(gestureData.gesture == KinectGestures.Gestures.Click)
+						if(gestureData.gesture == KinectGestures.Gestures.GolpeDerecha)
 						{
 							if(ControlMouseCursor)
 							{
@@ -1261,11 +1261,11 @@ public class KinectManager : MonoBehaviour
 					}
 					else if(gestureData.progress >= 0.1f)
 					{
-						if((gestureData.gesture == KinectGestures.Gestures.RightHandCursor || 
-							gestureData.gesture == KinectGestures.Gestures.LeftHandCursor) && 
+						if((gestureData.gesture == KinectGestures.Gestures.GolpeDerecha || 
+							gestureData.gesture == KinectGestures.Gestures.GolpeIzquierda) && 
 							gestureData.progress >= 0.5f)
 						{
-							if(GetGestureProgress(gestureData.userId, KinectGestures.Gestures.Click) < 0.3f)
+							if(GetGestureProgress(gestureData.userId, KinectGestures.Gestures.Joe) < 0.3f)
 							{
 								if(HandCursor2 != null)
 								{

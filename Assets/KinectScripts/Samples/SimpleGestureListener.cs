@@ -16,8 +16,8 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 		// as an example - detect these user specific gestures
 		KinectManager manager = KinectManager.Instance;
 
-		manager.DetectGesture(userId, KinectGestures.Gestures.Jump);
-		manager.DetectGesture(userId, KinectGestures.Gestures.Squat);
+//		manager.DetectGesture(userId, KinectGestures.Gestures.Jump);
+	//	manager.DetectGesture(userId, KinectGestures.Gestures.Squat);
 
 //		manager.DetectGesture(userId, KinectGestures.Gestures.Push);
 //		manager.DetectGesture(userId, KinectGestures.Gestures.Pull);
@@ -43,7 +43,7 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 	                              float progress, KinectWrapper.NuiSkeletonPositionIndex joint, Vector3 screenPos)
 	{
 		//GestureInfo.guiText.text = string.Format("{0} Progress: {1:F1}%", gesture, (progress * 100));
-		if(gesture == KinectGestures.Gestures.Click && progress > 0.3f)
+		if(gesture == KinectGestures.Gestures.GolpeDerecha && progress > 0.3f)
 		{
 			string sGestureText = string.Format ("{0} {1:F1}% complete", gesture, progress * 100);
 			if(GestureInfo != null)
@@ -51,7 +51,7 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 			
 			progressDisplayed = true;
 		}		
-		else if((gesture == KinectGestures.Gestures.ZoomOut || gesture == KinectGestures.Gestures.ZoomIn) && progress > 0.5f)
+/*		else if((gesture == KinectGestures.Gestures.Golpe || gesture == KinectGestures.Gestures.ZoomIn) && progress > 0.5f)
 		{
 			string sGestureText = string.Format ("{0} detected, zoom={1:F1}%", gesture, screenPos.z * 100);
 			if(GestureInfo != null)
@@ -66,14 +66,14 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 				GestureInfo.GetComponent<GUIText>().text = sGestureText;
 			
 			progressDisplayed = true;
-		}
+		}*/
 	}
 
 	public bool GestureCompleted (uint userId, int userIndex, KinectGestures.Gestures gesture, 
 	                              KinectWrapper.NuiSkeletonPositionIndex joint, Vector3 screenPos)
 	{
 		string sGestureText = gesture + " detected";
-		if(gesture == KinectGestures.Gestures.Click)
+		if(gesture == KinectGestures.Gestures.GolpeIzquierda)
 			sGestureText += string.Format(" at ({0:F1}, {1:F1})", screenPos.x, screenPos.y);
 		
 		if(GestureInfo != null)
