@@ -23,7 +23,12 @@ public class AmbienteController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        switch (LoginController.dojoSelected) {
+
+        Debug.Log("ambiente" + LoginController.dojoSelected);
+        Debug.Log("musica" + LoginController.musicSelected);
+  
+
+        switch (LoginController.dojoSelected+1) {
             case 1:
                 fondo.sprite = Default;
                 break;
@@ -59,7 +64,7 @@ public class AmbienteController : MonoBehaviour {
         }
 
 
-        switch (LoginController.musicSelected) {
+        switch (LoginController.musicSelected+1) {
             case 1:
                 audio1.Play();
                 break;

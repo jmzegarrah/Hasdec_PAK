@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -86,6 +88,7 @@
     <Compile Include="Assets\ConnectionData\PerfilController.cs" />
     <Compile Include="Assets\ConnectionData\QuestionController.cs" />
     <Compile Include="Assets\ConnectionData\SesionController.cs" />
+    <Compile Include="Assets\ConnectionData\SubsKarate.cs" />
     <Compile Include="Assets\ConnectionData\TutorialController.cs" />
     <Compile Include="Assets\ConnectionData\UserController.cs" />
     <Compile Include="Assets\ConnectionData\updateController.cs" />
@@ -146,7 +149,10 @@
     <Compile Include="Assets\Scripts\CambiarMusica.cs" />
     <Compile Include="Assets\Scripts\CambiarMusica2.cs" />
     <Compile Include="Assets\Scripts\CambiarVozEntrenador.cs" />
+    <Compile Include="Assets\Scripts\JoeListener.cs" />
     <Compile Include="Assets\Scripts\KamaeController.cs" />
+    <Compile Include="Assets\Scripts\TsukiListener.cs" />
+    <Compile Include="Assets\Scripts\MusibidachiListener.cs" />
     <Compile Include="Assets\Scripts\PosAtaController.cs" />
     <Compile Include="Assets\Scripts\PosCueController.cs" />
     <Compile Include="Assets\Scripts\PosDefController.cs" />

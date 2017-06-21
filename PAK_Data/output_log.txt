@@ -1,25 +1,31 @@
-Initialize engine version: 5.6.0f3 (497a0f351392)
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce 840M    (ID=0x1341)
-    Vendor:   NVIDIA
-    VRAM:     1992 MB
-    Driver:   10.18.13.5362
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics 3000 (ID=0x116)
+    Vendor:   Intel
+    VRAM:     848 MB
+    Driver:   9.17.10.4459
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.262 seconds
-Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.047 seconds
+Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on SoundManager
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 376)
+
 OnLevelWasLoaded was found on iraMenuPrincipal
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
@@ -82,11 +88,12 @@ Add a delegate to SceneManager.sceneLoaded instead to get notifications after sc
 
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 58.852108 ms
-Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\UnityScript.Lang.dll (this message is harmless)
-Platform assembly: C:\Users\Gonxalo\Desktop\PAK\PAK_Data\Managed\Boo.Lang.dll (this message is harmless)
+UnloadTime: 64.253502 ms
+Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\Boo.Lang.dll (this message is harmless)
 MissingMethodException: UnityEngine.Texture2D.Play
   at Boo.Lang.Runtime.DynamicDispatching.MethodDispatcherFactory.ProduceExtensionDispatcher () [0x00000] in <filename unknown>:0 
   at Boo.Lang.Runtime.DynamicDispatching.MethodDispatcherFactory.Create () [0x00000] in <filename unknown>:0 
@@ -103,34 +110,205 @@ MissingMethodException: UnityEngine.Texture2D.Play
 (Filename:  Line: -1)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2898 -> priority: 1 
-  Thread -> id: 18a8 -> priority: 1 
+  Thread -> id: 1a58 -> priority: 1 
+  Thread -> id: 1d60 -> priority: 1 
+The referenced script on this Behaviour (Game Object 'registrarUsuario') is missing!
+ 
+(Filename:  Line: 1743)
+
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 375.384033 ms
+UnloadTime: 467.270599 ms
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 908.
-Total: 20.706606 ms (FindLiveObjects: 0.065003 ms CreateObjectMapping: 0.051746 ms MarkObjects: 20.564623 ms  DeleteObjects: 0.024803 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1050.
+Total: 1.095932 ms (FindLiveObjects: 0.116911 ms CreateObjectMapping: 0.045068 ms MarkObjects: 0.911640 ms  DeleteObjects: 0.020972 ms)
 
-Te encuentras en logros
+Hizo click
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 16.519867 ms
-
-Unloading 224 unused Assets to reduce memory usage. Loaded Objects now: 581.
-Total: 0.588880 ms (FindLiveObjects: 0.062865 ms CreateObjectMapping: 0.043620 ms MarkObjects: 0.371204 ms  DeleteObjects: 0.109907 ms)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+http://localhost/PAK_AgregarUsuario.php?UsuNomApe=Jesus&UsuIma=1&UsuSex=0&UsuSobNom=Jesus&UsuCon=soloporti29&UsuPreSec=2&UsuResPreSec=Danden&UsuEstPriSes=1&UsuMus=1&UsuEst=1&HisCod=1&PerCod=1
  
-(Filename:  Line: 462)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Scene 'VerPerfil' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
+http://localhost/PAK_AgregarUsuario.php?UsuNomApe=Jesus&UsuIma=1&UsuSex=0&UsuSobNom=Jesus&UsuCon=soloporti29&UsuPreSec=2&UsuResPreSec=Danden&UsuEstPriSes=1&UsuMus=1&UsuEst=1&HisCod=1&PerCod=1
  
-(Filename:  Line: 137)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Te encuentras en perfil.
+El usuario ya existe
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_AgregarUsuario.php?UsuNomApe=Jesus&UsuIma=1&UsuSex=0&UsuSobNom=Jesus&UsuCon=soloporti29&UsuPreSec=2&UsuResPreSec=Danden&UsuEstPriSes=1&UsuMus=1&UsuEst=1&HisCod=1&PerCod=1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+El usuario ya existe
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=Jesus&UsuCon=soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=Jesus&UsuCon=soloporti
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=Jesus&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=Jesus&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hizo click
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_PreguntaSeguridad/PAK_ValidarUsuario.php?UsuSobNom=Jesus
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_PreguntaSeguridad/PAK_ValidarUsuario.php?UsuSobNom=Jesus
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Nombre de la Primera mascota.
+
+
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_PreguntaSeguridad/PAK_ValidarRespuesta.php?UsuSobNom=Jesus&UsuResPreSec=Danden
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_PreguntaSeguridad/PAK_ValidarRespuesta.php?UsuSobNom=Jesus&UsuResPreSec=Danden
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Correcto
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1
+
+
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_AgregarUsuario.php?UsuNomApe=Jesusz&UsuIma=1&UsuSex=0&UsuSobNom=JesusZ&UsuCon=Soloporti29&UsuPreSec=2&UsuResPreSec=Danden&UsuEstPriSes=1&UsuMus=1&UsuEst=1&HisCod=1&PerCod=1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

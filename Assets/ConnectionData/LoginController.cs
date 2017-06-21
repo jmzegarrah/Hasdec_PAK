@@ -32,6 +32,7 @@ public class LoginController : MonoBehaviour
     public static int mostrarSubs ;
     public static int mostrarmePantalla ;
     public static int mostrarTips ;
+    public static int userSex;
 
 
 
@@ -46,7 +47,7 @@ public class LoginController : MonoBehaviour
     public void ValidarUsuario()
     {
 
-        if (UsuSobNom.text.Length > 0 && UsuCon.text.Length > 8)
+        if (UsuSobNom.text.Length > 0 && UsuCon.text.Length >= 8)
         {
                  string url = "http://localhost/PAK_Login.php?"
                            + "UsuSobNom=" + UsuSobNom.text + "&" +
@@ -87,12 +88,11 @@ public class LoginController : MonoBehaviour
 
             musicSelected = Int32.Parse(configuracion[0]) - 1; 
             dojoSelected = Int32.Parse(configuracion[1]) - 1;
-
             reproducirVoz = Int32.Parse(configuracion[2]) ;
             mostrarSubs = Int32.Parse(configuracion[3]) ; 
             mostrarmePantalla = Int32.Parse(configuracion[4]) ;
             mostrarTips = Int32.Parse(configuracion[5]) ;
-
+            userSex = Int32.Parse(configuracion[6]);
 
             SceneManager.LoadScene("Scene");
             Debug.Log("Te encuentras en menu principal");
