@@ -13,7 +13,7 @@ public class ModulosController : MonoBehaviour {
     public Image lockAtaque;
     public Image lockDefensa;
     //public string usuarioTemp = "vilmapalma8";
-    public string usuarioTemp = LoginController.usuario;
+    private string usuarioTemp = LoginController.usuario;
     public static String modulo = "";
 
     private void Start()

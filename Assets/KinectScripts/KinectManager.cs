@@ -10,6 +10,7 @@ using System.Text;
 
 public class KinectManager : MonoBehaviour
 {
+    
 	public enum Smoothing : int { None, Default, Medium, Aggressive }
 	
 	
