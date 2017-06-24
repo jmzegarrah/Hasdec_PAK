@@ -36,8 +36,13 @@ public class UserController : MonoBehaviour
             if (UsuCon.text.Equals(UsuConConfirmacion.text))
             {
                 string pregunta = (UsuPreSec.value + 1).ToString();
+                string nombreApellido = usuNomApe.text;
+                Debug.Log(nombreApellido);
+                nombreApellido = nombreApellido.Replace(" ","+");    
+                Debug.Log(nombreApellido);
+ 
                 string url = "http://localhost/PAK_AgregarUsuario.php?"
-                           + "UsuNomApe=" +usuNomApe.text + "&" +
+                           + "UsuNomApe=" +nombreApellido + "&" +
                            "UsuIma=" + UsuIma + "&" +
                            "UsuSex=" + UsuSex.value.ToString() + "&" +
                            "UsuSobNom=" + UsuSobNom.text + "&" +
@@ -75,15 +80,17 @@ public class UserController : MonoBehaviour
         Debug.Log(url);
         WWW conecction = new WWW(url);
         yield return (conecction);
-        if (!conecction.text.Contains("Query"))
+        Debug.Log(conecction.text);
+        if (conecction.text.Contains("Query"))
         {
-            success.SetActive(true);
-            error.SetActive(false);
-        }
-        else {
             Debug.Log("El usuario ya existe");
             success.SetActive(false);
             error.SetActive(true);
+        }
+        else {
+            
+            success.SetActive(true);
+            error.SetActive(false);
         }
     }
 }
