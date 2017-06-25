@@ -17,7 +17,7 @@ Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityEng
 Loading C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.047 seconds
+- Completed reload, in  1.566 seconds
 Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on SoundManager
@@ -39,6 +39,12 @@ Add a delegate to SceneManager.sceneLoaded instead to get notifications after sc
 (Filename:  Line: 376)
 
 OnLevelWasLoaded was found on Logros
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 376)
+
+OnLevelWasLoaded was found on GestureListener
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
  
@@ -91,7 +97,7 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 64.253502 ms
+UnloadTime: 68.685905 ms
 Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\UnityScript.Lang.dll (this message is harmless)
 Platform assembly: C:\Users\migue\Documents\Hasdec_PAK\PAK_Data\Managed\Boo.Lang.dll (this message is harmless)
 MissingMethodException: UnityEngine.Texture2D.Play
@@ -110,205 +116,191 @@ MissingMethodException: UnityEngine.Texture2D.Play
 (Filename:  Line: -1)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1a58 -> priority: 1 
-  Thread -> id: 1d60 -> priority: 1 
+  Thread -> id: 2638 -> priority: 1 
+  Thread -> id: 229c -> priority: 1 
 The referenced script on this Behaviour (Game Object 'registrarUsuario') is missing!
  
 (Filename:  Line: 1743)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 467.270599 ms
+UnloadTime: 538.644775 ms
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1050.
-Total: 1.095932 ms (FindLiveObjects: 0.116911 ms CreateObjectMapping: 0.045068 ms MarkObjects: 0.911640 ms  DeleteObjects: 0.020972 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1051.
+Total: 92.148056 ms (FindLiveObjects: 0.142792 ms CreateObjectMapping: 0.120035 ms MarkObjects: 91.822762 ms  DeleteObjects: 0.060686 ms)
 
-Hizo click
+http://localhost/PAK_Login.php?UsuSobNom=zenosama&UsuCon=zenosama
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_AgregarUsuario.php?UsuNomApe=Jesus&UsuIma=1&UsuSex=0&UsuSobNom=Jesus&UsuCon=soloporti29&UsuPreSec=2&UsuResPreSec=Danden&UsuEstPriSes=1&UsuMus=1&UsuEst=1&HisCod=1&PerCod=1
+Te encuentras en menu principal
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_AgregarUsuario.php?UsuNomApe=Jesus&UsuIma=1&UsuSex=0&UsuSobNom=Jesus&UsuCon=soloporti29&UsuPreSec=2&UsuResPreSec=Danden&UsuEstPriSes=1&UsuMus=1&UsuEst=1&HisCod=1&PerCod=1
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.555100 ms
+
+Unloading 224 unused Assets to reduce memory usage. Loaded Objects now: 665.
+Total: 1.950457 ms (FindLiveObjects: 0.194108 ms CreateObjectMapping: 0.148147 ms MarkObjects: 1.250773 ms  DeleteObjects: 0.355642 ms)
+
+http://localhost/PAK_Tutorial/PAK_mostrarTutorial.php?UsuSobNom=zenosama
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-El usuario ya existe
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 462)
+
+Se encuentra en Configuracion
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_AgregarUsuario.php?UsuNomApe=Jesus&UsuIma=1&UsuSex=0&UsuSobNom=Jesus&UsuCon=soloporti29&UsuPreSec=2&UsuResPreSec=Danden&UsuEstPriSes=1&UsuMus=1&UsuEst=1&HisCod=1&PerCod=1
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 36.004253 ms
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 721.
+Total: 12.413582 ms (FindLiveObjects: 0.068272 ms CreateObjectMapping: 0.042391 ms MarkObjects: 0.590804 ms  DeleteObjects: 11.711221 ms)
+
+http://localhost/PAK_Configuraciones/PAK_getTrainingVoice.php?UsuSobNom=zenosama
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-El usuario ya existe
+http://localhost/PAK_Configuraciones/PAK_getShowSubs.php?UsuSobNom=zenosama
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=Jesus&UsuCon=soloporti29
+http://localhost/PAK_Configuraciones/PAK_getShowMe.php?UsuSobNom=zenosama
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=Jesus&UsuCon=soloporti
+http://localhost/PAK_Configuraciones/PAK_getShowTips.php?UsuSobNom=zenosama
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=Jesus&UsuCon=Soloporti29
+http://localhost/PAK_Configuraciones/PAK_getTrainingPlace.php?UsuSobNom=zenosama
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=Jesus&UsuCon=Soloporti29
+http://localhost/PAK_Configuraciones/PAK_getMusic.php?UsuSobNom=zenosama
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Hizo click
+http://localhost/PAK_Configuraciones/PAK_setTrainingPlace.php?UsuSobNom=zenosama&AmbCod=2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_PreguntaSeguridad/PAK_ValidarUsuario.php?UsuSobNom=Jesus
+http://localhost/PAK_Configuraciones/PAK_setMusic.php?UsuSobNom=zenosama&MusCod=2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_PreguntaSeguridad/PAK_ValidarUsuario.php?UsuSobNom=Jesus
+http://localhost/PAK_Configuraciones/PAK_setMusic.php?UsuSobNom=zenosama&MusCod=1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Nombre de la Primera mascota.
-
-
-
+Game started in same scene! Put your game starting stuff here.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_PreguntaSeguridad/PAK_ValidarRespuesta.php?UsuSobNom=Jesus&UsuResPreSec=Danden
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.174468 ms
+
+Unloading 59 unused Assets to reduce memory usage. Loaded Objects now: 666.
+Total: 15.834357 ms (FindLiveObjects: 0.123604 ms CreateObjectMapping: 0.036590 ms MarkObjects: 0.482817 ms  DeleteObjects: 15.189559 ms)
+
+http://localhost/PAK_Tutorial/PAK_mostrarTutorial.php?UsuSobNom=zenosama
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_PreguntaSeguridad/PAK_ValidarRespuesta.php?UsuSobNom=Jesus&UsuResPreSec=Danden
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 462)
+
+Se encuentra en pantalla kinect
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Correcto
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.599270 ms
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 340.
+Total: 31.602673 ms (FindLiveObjects: 0.053993 ms CreateObjectMapping: 0.067826 ms MarkObjects: 0.522531 ms  DeleteObjects: 30.956982 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.529224 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 434.
+Total: 0.381523 ms (FindLiveObjects: 0.026327 ms CreateObjectMapping: 0.025434 ms MarkObjects: 0.308788 ms  DeleteObjects: 0.020972 ms)
+
+http://localhost/PAK_Modulos/PAK_getLockMod.php?UsuSobNom=zenosama&NumMod=1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-1
-
-
-
+http://localhost/PAK_Modulos/PAK_getLockMod.php?UsuSobNom=zenosama&NumMod=2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_AgregarUsuario.php?UsuNomApe=Jesusz&UsuIma=1&UsuSex=0&UsuSobNom=JesusZ&UsuCon=Soloporti29&UsuPreSec=2&UsuResPreSec=Danden&UsuEstPriSes=1&UsuMus=1&UsuEst=1&HisCod=1&PerCod=1
+http://localhost/PAK_Modulos/PAK_getLockMod.php?UsuSobNom=zenosama&NumMod=3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+http://localhost/PAK_Modulos/PAK_getLockMod.php?UsuSobNom=zenosama&NumMod=4
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.657292 ms
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 373.
+Total: 0.446673 ms (FindLiveObjects: 0.037929 ms CreateObjectMapping: 0.041052 ms MarkObjects: 0.299418 ms  DeleteObjects: 0.067826 ms)
+
+http://localhost/PAK_Loading/PAK_getHistory.php?
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+http://localhost/PAK_Loading/PAK_getTip.php?
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+TIP
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.538595 ms
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 398.
+Total: 0.484156 ms (FindLiveObjects: 0.042837 ms CreateObjectMapping: 0.033467 ms MarkObjects: 0.313251 ms  DeleteObjects: 0.094153 ms)
+
+http://localhost/PAK_Modulos/PAK_getLockMov.php?UsuSobNom=zenosama&NumMov=1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+http://localhost/PAK_Modulos/PAK_getLockMov.php?UsuSobNom=zenosama&NumMov=2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.635426 ms
+Waiting for users.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+16
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 601.
+Total: 0.609545 ms (FindLiveObjects: 0.066041 ms CreateObjectMapping: 0.040160 ms MarkObjects: 0.462737 ms  DeleteObjects: 0.040160 ms)
+
+All players calibrated.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-http://localhost/PAK_Login.php?UsuSobNom=JesusZ&UsuCon=Soloporti29
+Waiting for users.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

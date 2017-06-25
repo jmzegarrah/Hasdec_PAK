@@ -7,9 +7,10 @@ public class KinectGestures
 
 	public interface GestureListenerInterface
 	{
-		// Invoked when a new user is detected and tracking starts
-		// Here you can start gesture detection with KinectManager.DetectGesture()
-		void UserDetected(uint userId, int userIndex);
+
+        // Invoked when a new user is detected and tracking starts
+        // Here you can start gesture detection with KinectManager.DetectGesture()
+        void UserDetected(uint userId, int userIndex);
 
 		// Invoked when a user is lost
 		// Gestures for this user are cleared automatically, but you can free the used resources
@@ -38,7 +39,6 @@ public class KinectGestures
 		GolpeIzquierda,
 		Musibidachi,
 		Joe,
-		Kamae,
 		Zenkutsu,
 		Kokutsu,
 		Tsuki,
@@ -393,57 +393,7 @@ public class KinectGestures
 					}
 					break;
 
-						case Gestures.Kamae:
-						switch(gestureData.state)
-					  {
-					    case 0:  // gesture detection - phase 1
-					      if(jointsTracked[rightHandIndex] && jointsTracked[leftElbowIndex] && jointsTracked[rightShoulderIndex] &&
-					         (jointsPos[rightHandIndex].y - jointsPos[leftElbowIndex].y) > -0.1f &&
-					         Mathf.Abs(jointsPos[rightHandIndex].x - jointsPos[rightShoulderIndex].x) < 0.2f &&
-					         (jointsPos[rightHandIndex].z - jointsPos[leftElbowIndex].z) < -0.3f)
-					      {
-					        SetGestureJoint(ref gestureData, timestamp, rightHandIndex, jointsPos[rightHandIndex]);
-					        gestureData.progress = 0.5f;
-					      }
-					      else if(jointsTracked[leftHandIndex] && jointsTracked[rightElbowIndex] && jointsTracked[leftShoulderIndex] &&
-					              (jointsPos[leftHandIndex].y - jointsPos[rightElbowIndex].y) > -0.1f &&
-					              Mathf.Abs(jointsPos[leftHandIndex].x - jointsPos[leftShoulderIndex].x) < 0.2f &&
-					              (jointsPos[leftHandIndex].z - jointsPos[rightElbowIndex].z) < -0.3f)
-					      {
-					        SetGestureJoint(ref gestureData, timestamp, leftHandIndex, jointsPos[leftHandIndex]);
-					        gestureData.progress = 0.5f;
-					      }
-					      break;
-
-					    case 1:  // gesture phase 2 = complete
-					      if((timestamp - gestureData.timestamp) < 1.5f)
-					      {
-					        bool isInPose = gestureData.joint == rightHandIndex ?
-					          jointsTracked[rightHandIndex] && jointsTracked[leftElbowIndex] && jointsTracked[rightShoulderIndex] &&
-					          (jointsPos[rightHandIndex].y - jointsPos[leftElbowIndex].y) > -0.1f &&
-					          Mathf.Abs(jointsPos[rightHandIndex].x - gestureData.jointPos.x) < 0.2f &&
-					          (jointsPos[rightHandIndex].z - gestureData.jointPos.z) > 0.1f :
-					          jointsTracked[leftHandIndex] && jointsTracked[rightElbowIndex] && jointsTracked[leftShoulderIndex] &&
-					          (jointsPos[leftHandIndex].y - jointsPos[rightElbowIndex].y) > -0.1f &&
-					          Mathf.Abs(jointsPos[leftHandIndex].x - gestureData.jointPos.x) < 0.2f &&
-					          (jointsPos[leftHandIndex].z - gestureData.jointPos.z) > 0.1f;
-
-					        if(isInPose)
-					        {
-					          Vector3 jointPos = jointsPos[gestureData.joint];
-					          CheckPoseComplete(ref gestureData, timestamp, jointPos, isInPose, 0f);
-					        }
-					      }
-					      else
-					      {
-					        // cancel the gesture
-					        SetGestureCancelled(ref gestureData);
-					      }
-					      break;
-					  }
-					  break;
-
-
+		
 						case Gestures.Zenkutsu:
 						Vector3 vectorWheel = (Vector3)jointsPos[rightHandIndex] - jointsPos[leftHandIndex];
 						float distWheel = vectorWheel.magnitude;

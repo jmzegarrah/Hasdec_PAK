@@ -21,7 +21,7 @@ public class KamaeController : MonoBehaviour {
     public AudioSource audio4;
     public AudioSource audio5;
 
-
+    
     // Use this for initialization
     void Start () {
         switch (LoginController.dojoSelected)

@@ -74,3 +74,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Age.unity
     guid: 5370b1496e435774886915ecce8ccdaa
+  - enabled: 1
+    path: Assets/GesturesDemo/KinectGestures.unity
+    guid: 07e9ad62928cf2c4c86ad9835990ff0f
