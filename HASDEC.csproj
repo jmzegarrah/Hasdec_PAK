@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{947FEA52-E969-517F-66EA-420E98E86A4B}</ProjectGuid>
+    <ProjectGuid>{029BBC34-16A9-5A7E-F30D-F2D87AE2289A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -120,7 +120,7 @@
     <Compile Include="Assets\Game Jam Menu Template\Scripts\eliminarCuentaCuadro.cs" />
     <Compile Include="Assets\Game Jam Menu Template\Scripts\iraMenuPrincipal.cs" />
     <Compile Include="Assets\GesturesDemo\Scripts\GestureListener.cs" />
-    <Compile Include="Assets\GesturesDemo\Scripts\PresentationScript.cs" />
+    <Compile Include="Assets\GesturesDemo\Scripts\MusibidachiListener.cs" />
     <Compile Include="Assets\KinectScripts\AvatarController.cs" />
     <Compile Include="Assets\KinectScripts\AvatarControllerClassic.cs" />
     <Compile Include="Assets\KinectScripts\Cubeman\CubemanController.cs" />
@@ -147,11 +147,13 @@
     <Compile Include="Assets\Scripts\CambiarMusica.cs" />
     <Compile Include="Assets\Scripts\CambiarMusica2.cs" />
     <Compile Include="Assets\Scripts\CambiarVozEntrenador.cs" />
+    <Compile Include="Assets\Scripts\JoeListener.cs" />
     <Compile Include="Assets\Scripts\KamaeController.cs" />
     <Compile Include="Assets\Scripts\PosAtaController.cs" />
     <Compile Include="Assets\Scripts\PosCueController.cs" />
     <Compile Include="Assets\Scripts\PosDefController.cs" />
     <Compile Include="Assets\Scripts\PosNatController.cs" />
+    <Compile Include="Assets\Scripts\TsukiListener.cs" />
     <Compile Include="Assets\Scripts\pantallaKinect.cs" />
     <Compile Include="Assets\Scripts\regresarModulo.cs" />
   </ItemGroup>

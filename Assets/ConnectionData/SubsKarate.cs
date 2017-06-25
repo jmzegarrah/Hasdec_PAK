@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class SubsKarate : MonoBehaviour {
 
     public Image subTutor;
+    public AudioSource soundTutor;
     //public float DelayTime = 10.0f;
 
 
@@ -22,7 +23,15 @@ public class SubsKarate : MonoBehaviour {
         else {
             subTutor.enabled = false;
         }
-	}
+        if (LoginController.reproducirVoz == 1)
+        {
+            soundTutor.Play();
+        }
+        else
+        {
+            soundTutor.Stop();
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
