@@ -292,46 +292,77 @@ public class GestureListener : MonoBehaviour, KinectGestures.GestureListenerInte
         {
             if (contador1 == 3)
                 GestureInfo.GetComponent<GUIText>().text = "Siguiente Movimiento";
+                ActualizarMovimiento(1);
         }
         else if (MovActual == 2)
         {
             if (contador2 == 3)
                 GestureInfo.GetComponent<GUIText>().text = "Siguiente Movimiento";
+                ActualizarMovimiento(2);
         }
         else if (MovActual == 3)
         {
             if (contador3 == 3)
                 GestureInfo.GetComponent<GUIText>().text = "Siguiente Movimiento";
+                ActualizarMovimiento(3);
         }
         else if (MovActual == 4)
         {
             if (contador4 == 3)
                 GestureInfo.GetComponent<GUIText>().text = "Siguiente Movimiento";
+                ActualizarMovimiento(4);
         }
         else if (MovActual == 5)
         {
             if (contador5 == 3)
                 GestureInfo.GetComponent<GUIText>().text = "Siguiente Movimiento";
+                ActualizarMovimiento(5);
         }
         else if (MovActual == 6)
         {
             if (contador6 == 3)
                 GestureInfo.GetComponent<GUIText>().text = "Siguiente Movimiento";
+                ActualizarMovimiento(6);
         }
         else if (MovActual == 7)
         {
             if (contador7 == 3)
                 GestureInfo.GetComponent<GUIText>().text = "Siguiente Movimiento";
+                ActualizarMovimiento(7);
         }
         else if (MovActual == 8)
         {
             if (contador8 == 3)
                 GestureInfo.GetComponent<GUIText>().text = "Siguiente Movimiento";
+                ActualizarMovimiento(8);
         }
 
         return true;
 
     }
+
+    public void ActualizarMovimiento(int movimiento)
+    {
+        string url = "http://localhost/PAK_Modulos/PAK_setMov.php?" + "UsuSobNom=" + LoginController.usuario + "&NumMov=" + movimiento;
+        StartCoroutine(Actualizar(url));
+    }
+
+    IEnumerator Actualizar(string url)
+    {
+        Debug.Log(url);
+        WWW conecction = new WWW(url);
+        yield return (conecction);
+        if (conecction.text.Contains("null"))
+        {
+            Debug.Log("No se encuentran datos");
+        }
+        else
+        {
+           
+        }
+    }
+
+
 
     public bool GestureCancelled(uint userId, int userIndex, KinectGestures.Gestures gesture,
                                   KinectWrapper.NuiSkeletonPositionIndex joint)
