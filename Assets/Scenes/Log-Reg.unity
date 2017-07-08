@@ -1005,7 +1005,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter text...
+  m_Text: 
 --- !u!222 &205517527
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2184,7 +2184,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter text...
+  m_Text: 
 --- !u!222 &439946274
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2419,7 +2419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 24}
+  m_AnchoredPosition: {x: 0, y: 0.000011444}
   m_SizeDelta: {x: -20, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &501340524
@@ -2454,7 +2454,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter text...
+  m_Text: 
 --- !u!222 &501340525
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4226,7 +4226,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\"Username y/o Contrase\xF1a\"  incorrectos"
+  m_Text: Error al Iniciar Sesion
 --- !u!222 &861663708
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4248,8 +4248,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33, y: -243}
-  m_SizeDelta: {x: 200, y: 30}
+  m_AnchoredPosition: {x: -29, y: -229.9}
+  m_SizeDelta: {x: 254, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &882601402
 GameObject:
@@ -6395,7 +6395,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Min 8 Max 10 Digitos
 --- !u!222 &1276690599
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6430,6 +6430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Contrasena: {fileID: 646844721}
+  valerror: {fileID: 0}
 --- !u!4 &1280562210
 Transform:
   m_ObjectHideFlags: 0

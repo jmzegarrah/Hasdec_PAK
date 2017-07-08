@@ -30,8 +30,8 @@ public class UserController : MonoBehaviour
     public void RegistrarUsuario()
     {
 
-        if (UsuSobNom.text.Length >0 && UsuSobNom.text.Length < 20 && UsuCon.text.Length >= 8 && UsuCon.text.Length < 20
-           && UsuConConfirmacion.text.Length >= 8 && UsuConConfirmacion.text.Length < 20)
+        if (UsuSobNom.text.Length >0 && UsuSobNom.text.Length <= 20 && UsuCon.text.Length >= 8 && UsuCon.text.Length <= 20
+           && UsuConConfirmacion.text.Length >= 8 && UsuConConfirmacion.text.Length <= 20)
         {
             if (UsuCon.text.Equals(UsuConConfirmacion.text))
             {
@@ -81,9 +81,9 @@ public class UserController : MonoBehaviour
         WWW conecction = new WWW(url);
         yield return (conecction);
         Debug.Log(conecction.text);
-        if (conecction.text.Contains("Query"))
+        if (!conecction.text.Contains("111111111"))
         {
-            Debug.Log("El usuario ya existe");
+            Debug.Log("Error al Crear Usuario o el Usuario Ya existe");
             success.SetActive(false);
             error.SetActive(true);
         }

@@ -80,22 +80,29 @@ public class LoginController : MonoBehaviour
         }
         else
         {
-            logerror.SetActive(false);
-            logsuccess.SetActive(true);
 
+            try
+            {
+                logerror.SetActive(false);
+                logsuccess.SetActive(true);
+                string[] configuracion = conecction.text.Split('#');
 
-            string[] configuracion = conecction.text.Split('#');
+                musicSelected = Int32.Parse(configuracion[0]) - 1;
+                dojoSelected = Int32.Parse(configuracion[1]) - 1;
+                reproducirVoz = Int32.Parse(configuracion[2]);
+                mostrarSubs = Int32.Parse(configuracion[3]);
+                mostrarmePantalla = Int32.Parse(configuracion[4]);
+                mostrarTips = Int32.Parse(configuracion[5]);
+                userSex = Int32.Parse(configuracion[6]);
 
-            musicSelected = Int32.Parse(configuracion[0]) - 1; 
-            dojoSelected = Int32.Parse(configuracion[1]) - 1;
-            reproducirVoz = Int32.Parse(configuracion[2]) ;
-            mostrarSubs = Int32.Parse(configuracion[3]) ; 
-            mostrarmePantalla = Int32.Parse(configuracion[4]) ;
-            mostrarTips = Int32.Parse(configuracion[5]) ;
-            userSex = Int32.Parse(configuracion[6]);
+                SceneManager.LoadScene("Scene");
+                Debug.Log("Te encuentras en menu principal");
 
-            SceneManager.LoadScene("Scene");
-            Debug.Log("Te encuentras en menu principal");
+            }
+            catch (Exception) {
+                logerror.SetActive(true);
+                logsuccess.SetActive(false);
+            }
            
         }
     }
