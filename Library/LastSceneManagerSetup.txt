@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Log-Reg.unity
+- path: Assets/GesturesDemo/KinectGesturesDemo.unity
   isLoaded: 1
   isActive: 1

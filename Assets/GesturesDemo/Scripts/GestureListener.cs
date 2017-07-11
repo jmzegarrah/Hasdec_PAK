@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 public class GestureListener : MonoBehaviour, KinectGestures.GestureListenerInterface
 {
@@ -24,6 +25,42 @@ public class GestureListener : MonoBehaviour, KinectGestures.GestureListenerInte
     private bool Uke;
     private bool AgeUke;
 
+    public GameObject move1;
+    public GameObject move2;
+    public GameObject move3;
+    public GameObject move4;
+    public GameObject move5;
+    public GameObject move6;
+    public GameObject move7;
+    public GameObject move8;
+
+    public Image mov1;
+    public Image mov2;
+    public Image mov3;
+    public Image mov4;
+    public Image mov5;
+    public Image mov6;
+    public Image mov7;
+    public Image mov8;
+
+    public Image subTutor1;
+    public Image subTutor2;
+    public Image subTutor3;
+    public Image subTutor4;
+    public Image subTutor5;
+    public Image subTutor6;
+    public Image subTutor7;
+    public Image subTutor8;
+
+    public AudioSource soundTutor1;
+    public AudioSource soundTutor2;
+    public AudioSource soundTutor3;
+    public AudioSource soundTutor4;
+    public AudioSource soundTutor5;
+    public AudioSource soundTutor6;
+    public AudioSource soundTutor7;
+    public AudioSource soundTutor8;
+
     public int MovActual = 0;
     private string usuarioTemp = LoginController.usuario;
     public static String modulo = "";
@@ -43,6 +80,395 @@ public class GestureListener : MonoBehaviour, KinectGestures.GestureListenerInte
     void Start()
     {
         SeleccionMovimineto();
+
+        if (MovActual == 1)
+        {
+            mov1.enabled = true;
+            mov2.enabled = false;
+            mov3.enabled = false;
+            mov4.enabled = false;
+            mov5.enabled = false;
+            mov6.enabled = false;
+            mov7.enabled = false;
+            mov8.enabled = false;
+        }
+        else if (MovActual == 2)
+        {
+            mov2.enabled = true;
+            mov1.enabled = false;
+            mov3.enabled = false;
+            mov4.enabled = false;
+            mov5.enabled = false;
+            mov6.enabled = false;
+            mov7.enabled = false;
+            mov8.enabled = false;
+        }
+        else if (MovActual == 3)
+        {
+            mov3.enabled = true;
+            mov1.enabled = false;
+            mov2.enabled = false;
+            mov4.enabled = false;
+            mov5.enabled = false;
+            mov6.enabled = false;
+            mov7.enabled = false;
+            mov8.enabled = false;
+        }
+        else if (MovActual == 4)
+        {
+            mov4.enabled = true;
+            mov1.enabled = false;
+            mov3.enabled = false;
+            mov2.enabled = false;
+            mov5.enabled = false;
+            mov6.enabled = false;
+            mov7.enabled = false;
+            mov8.enabled = false;
+        }
+        else if (MovActual == 5)
+        {
+            mov5.enabled = true;
+            mov1.enabled = false;
+            mov3.enabled = false;
+            mov4.enabled = false;
+            mov2.enabled = false;
+            mov6.enabled = false;
+            mov7.enabled = false;
+            mov8.enabled = false;
+        }
+        else if (MovActual == 6)
+        {
+            mov6.enabled = true;
+            mov1.enabled = false;
+            mov3.enabled = false;
+            mov4.enabled = false;
+            mov5.enabled = false;
+            mov2.enabled = false;
+            mov7.enabled = false;
+            mov8.enabled = false;
+        }
+        else if (MovActual == 7)
+        {
+            mov7.enabled = true;
+            mov1.enabled = false;
+            mov3.enabled = false;
+            mov4.enabled = false;
+            mov5.enabled = false;
+            mov6.enabled = false;
+            mov2.enabled = false;
+            mov8.enabled = false;
+        }
+        else if (MovActual == 8)
+        {
+            mov8.enabled = true;
+            mov1.enabled = false;
+            mov3.enabled = false;
+            mov4.enabled = false;
+            mov5.enabled = false;
+            mov6.enabled = false;
+            mov7.enabled = false;
+            mov2.enabled = false;
+        }
+    
+
+
+
+        if (LoginController.mostrarSubs == 1)
+        {
+            if (MovActual == 1)
+            {
+                subTutor1.enabled = true;
+                subTutor2.enabled = false;
+                subTutor3.enabled = false;
+                subTutor4.enabled = false;
+                subTutor5.enabled = false;
+                subTutor6.enabled = false;
+                subTutor7.enabled = false;
+                subTutor8.enabled = false;
+            }
+            else if (MovActual == 2)
+            {
+                subTutor2.enabled = true;
+                subTutor1.enabled = false;
+                subTutor3.enabled = false;
+                subTutor4.enabled = false;
+                subTutor5.enabled = false;
+                subTutor6.enabled = false;
+                subTutor7.enabled = false;
+                subTutor8.enabled = false;
+            }
+            else if (MovActual == 3)
+            {
+                subTutor3.enabled = true;
+                subTutor1.enabled = false;
+                subTutor2.enabled = false;
+                subTutor4.enabled = false;
+                subTutor5.enabled = false;
+                subTutor6.enabled = false;
+                subTutor7.enabled = false;
+                subTutor8.enabled = false;
+            }
+            else if (MovActual == 4)
+            {
+                subTutor4.enabled = true;
+                subTutor1.enabled = false;
+                subTutor3.enabled = false;
+                subTutor2.enabled = false;
+                subTutor5.enabled = false;
+                subTutor6.enabled = false;
+                subTutor7.enabled = false;
+                subTutor8.enabled = false;
+            }
+            else if (MovActual == 5)
+            {
+                subTutor5.enabled = true;
+                subTutor1.enabled = false;
+                subTutor3.enabled = false;
+                subTutor4.enabled = false;
+                subTutor2.enabled = false;
+                subTutor6.enabled = false;
+                subTutor7.enabled = false;
+                subTutor8.enabled = false;
+            }
+            else if (MovActual == 6)
+            {
+                subTutor6.enabled = true;
+                subTutor1.enabled = false;
+                subTutor3.enabled = false;
+                subTutor4.enabled = false;
+                subTutor5.enabled = false;
+                subTutor2.enabled = false;
+                subTutor7.enabled = false;
+                subTutor8.enabled = false;
+            }
+            else if (MovActual == 7)
+            {
+                subTutor7.enabled = true;
+                subTutor1.enabled = false;
+                subTutor3.enabled = false;
+                subTutor4.enabled = false;
+                subTutor5.enabled = false;
+                subTutor6.enabled = false;
+                subTutor2.enabled = false;
+                subTutor8.enabled = false;
+            }
+            else if (MovActual == 8)
+            {
+                subTutor8.enabled = true;
+                subTutor1.enabled = false;
+                subTutor3.enabled = false;
+                subTutor4.enabled = false;
+                subTutor5.enabled = false;
+                subTutor6.enabled = false;
+                subTutor7.enabled = false;
+                subTutor2.enabled = false;
+            }
+        }
+        else {
+            subTutor1.enabled = false;
+            subTutor2.enabled = false;
+            subTutor3.enabled = false;
+            subTutor4.enabled = false;
+            subTutor5.enabled = false;
+            subTutor6.enabled = false;
+            subTutor7.enabled = false;
+            subTutor8.enabled = false;
+        }
+
+        if (LoginController.reproducirVoz == 1)
+        {
+            if (MovActual == 1)
+            {
+                soundTutor1.Play();
+                soundTutor2.Stop();
+                soundTutor3.Stop();
+                soundTutor4.Stop();
+                soundTutor5.Stop();
+                soundTutor6.Stop();
+                soundTutor7.Stop();
+                soundTutor8.Stop();
+            }
+            else if (MovActual == 2)
+            {
+                soundTutor2.Play();
+                soundTutor1.Stop();
+                soundTutor3.Stop();
+                soundTutor4.Stop();
+                soundTutor5.Stop();
+                soundTutor6.Stop();
+                soundTutor7.Stop();
+                soundTutor8.Stop();
+            }
+            else if (MovActual == 3)
+            {
+                soundTutor3.Play();
+                soundTutor1.Stop();
+                soundTutor2.Stop();
+                soundTutor4.Stop();
+                soundTutor5.Stop();
+                soundTutor6.Stop();
+                soundTutor7.Stop();
+                soundTutor8.Stop();
+            }
+            else if (MovActual == 4)
+            {
+                soundTutor4.Play();
+                soundTutor1.Stop();
+                soundTutor3.Stop();
+                soundTutor2.Stop();
+                soundTutor5.Stop();
+                soundTutor6.Stop();
+                soundTutor7.Stop();
+                soundTutor8.Stop();
+            }
+            else if (MovActual == 5)
+            {
+                soundTutor5.Play();
+                soundTutor1.Stop();
+                soundTutor3.Stop();
+                soundTutor4.Stop();
+                soundTutor2.Stop();
+                soundTutor6.Stop();
+                soundTutor7.Stop();
+                soundTutor8.Stop();
+            }
+            else if (MovActual == 6)
+            {
+                soundTutor6.Play();
+                soundTutor1.Stop();
+                soundTutor3.Stop();
+                soundTutor4.Stop();
+                soundTutor5.Stop();
+                soundTutor2.Stop();
+                soundTutor7.Stop();
+                soundTutor8.Stop();
+            }
+            else if (MovActual == 7)
+            {
+                soundTutor7.Play();
+                soundTutor1.Stop();
+                soundTutor3.Stop();
+                soundTutor4.Stop();
+                soundTutor5.Stop();
+                soundTutor6.Stop();
+                soundTutor2.Stop();
+                soundTutor8.Stop();
+            }
+            else if (MovActual == 8)
+            {
+                soundTutor8.Play();
+                soundTutor1.Stop();
+                soundTutor3.Stop();
+                soundTutor4.Stop();
+                soundTutor5.Stop();
+                soundTutor6.Stop();
+                soundTutor7.Stop();
+                soundTutor2.Stop();
+            }
+        }
+        else
+        {
+            soundTutor1.Stop();
+            soundTutor2.Stop();
+            soundTutor3.Stop();
+            soundTutor4.Stop();
+            soundTutor5.Stop();
+            soundTutor6.Stop();
+            soundTutor7.Stop();
+            soundTutor8.Stop();
+        }
+    }
+
+    public void Update()
+    {
+        SeleccionMovimineto();
+        if (MovActual == 1)
+        {
+            Enable1();
+            Disable2();
+            Disable3();
+            Disable4();
+            Disable5();
+            Disable6();
+            Disable7();
+            Disable8();
+        }
+        else if (MovActual == 2) {
+            Enable2();
+            Disable1();
+            Disable3();
+            Disable4();
+            Disable5();
+            Disable6();
+            Disable7();
+            Disable8();
+        }
+        else if (MovActual == 3)
+        {
+            Enable3();
+            Disable1();
+            Disable2();
+            Disable4();
+            Disable5();
+            Disable6();
+            Disable7();
+            Disable8();
+        }
+        else if (MovActual == 4)
+        {
+            Enable4();
+            Disable1();
+            Disable2();
+            Disable3();
+            Disable5();
+            Disable6();
+            Disable7();
+            Disable8();
+        }
+        else if (MovActual == 5)
+        {
+            Enable5();
+            Disable1();
+            Disable2();
+            Disable3();
+            Disable4();
+            Disable6();
+            Disable7();
+            Disable8();
+        }
+        else if (MovActual == 6)
+        {
+            Enable6();
+            Disable1();
+            Disable2();
+            Disable3();
+            Disable4();
+            Disable5();
+            Disable7();
+            Disable8();
+        }
+        else if (MovActual == 7)
+        {
+            Enable7();
+            Disable1();
+            Disable2();
+            Disable3();
+            Disable4();
+            Disable5();
+            Disable6();
+            Disable8();
+        }
+        else if (MovActual == 8)
+        {
+            Enable8();
+            Disable1();
+            Disable2();
+            Disable3();
+            Disable4();
+            Disable5();
+            Disable6();
+            Disable7();
+        }
     }
 
     public void SeleccionMovimineto()
@@ -369,6 +795,86 @@ public class GestureListener : MonoBehaviour, KinectGestures.GestureListenerInte
     {
         // don't do anything here, just reset the gesture state
         return true;
+    }
+
+    public void Enable1()
+    {
+        move1.SetActive(true);
+    }
+
+    public void Enable2()
+    {
+        move2.SetActive(true);
+    }
+
+    public void Enable3()
+    {
+        move3.SetActive(true);
+    }
+
+    public void Enable4()
+    {
+        move4.SetActive(true);
+    }
+
+    public void Enable5()
+    {
+        move5.SetActive(true);
+    }
+
+    public void Enable6()
+    {
+        move6.SetActive(true);
+    }
+
+    public void Enable7()
+    {
+        move7.SetActive(true);
+    }
+
+    public void Enable8()
+    {
+        move8.SetActive(true);
+    }
+
+    public void Disable1()
+    {
+        move1.SetActive(false);
+    }
+
+    public void Disable2()
+    {
+        move2.SetActive(false);
+    }
+
+    public void Disable3()
+    {
+        move3.SetActive(false);
+    }
+
+    public void Disable4()
+    {
+        move4.SetActive(false);
+    }
+
+    public void Disable5()
+    {
+        move5.SetActive(false);
+    }
+
+    public void Disable6()
+    {
+        move6.SetActive(false);
+    }
+
+    public void Disable7()
+    {
+        move7.SetActive(false);
+    }
+
+    public void Disable8()
+    {
+        move8.SetActive(false);
     }
 
 }

@@ -51,7 +51,7 @@ public class PosCueController : MonoBehaviour {
     {
         if (!lockKok.enabled)
         {
-            SceneManager.LoadScene("Kokutsu");
+            SceneManager.LoadScene("KinectGesturesDemo");
         }
        
     }
@@ -59,7 +59,7 @@ public class PosCueController : MonoBehaviour {
     {
         if (!lockZen.enabled)
         {
-            SceneManager.LoadScene("Zenkutsu");
+            SceneManager.LoadScene("KinectGesturesDemo");
         }
         
     }

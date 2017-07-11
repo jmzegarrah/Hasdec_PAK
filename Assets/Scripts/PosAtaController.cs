@@ -50,7 +50,7 @@ public class PosAtaController : MonoBehaviour {
     {
         if (!lockTsu.enabled)
         {
-            SceneManager.LoadScene("Tsuki");
+            SceneManager.LoadScene("KinectGesturesDemo");
         }
 
       
@@ -59,7 +59,7 @@ public class PosAtaController : MonoBehaviour {
     {
         if (!lockOi.enabled)
         {
-            SceneManager.LoadScene("Oi Zuki");
+            SceneManager.LoadScene("KinectGesturesDemo");
         }
 
         

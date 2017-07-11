@@ -46,7 +46,7 @@ public class PosDefController : MonoBehaviour {
     {
         if (!lockUke.enabled)
         {
-            SceneManager.LoadScene("Uke");
+            SceneManager.LoadScene("KinectGesturesDemo");
         }
 
        
@@ -55,7 +55,7 @@ public class PosDefController : MonoBehaviour {
     {
         if (!lockAge.enabled)
         {
-            SceneManager.LoadScene("Age");
+            SceneManager.LoadScene("KinectGesturesDemo");
         }
 
        

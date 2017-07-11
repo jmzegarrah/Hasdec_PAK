@@ -80,3 +80,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LogrosPAK.unity
     guid: 16bfa03c79fd6b0458b4adcfbfa2b821
+  - enabled: 1
+    path: Assets/GesturesDemo/KinectGesturesDemo.unity
+    guid: 7465fed52c8e37247926a8c77dd1f97b
